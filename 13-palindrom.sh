@@ -12,7 +12,7 @@ reverse=""
 
 echo " enter string name is : $STRINGNAME"
 
-if [ $INPUT == $reverse]
+if [ $INPUT == $reverse ]
 
 then
     echo " enter $input is palindrom"
