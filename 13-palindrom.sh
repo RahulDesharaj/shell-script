@@ -10,9 +10,9 @@ INPUT=${#STRINGNAME}
 
 reverse=""
 
-R="\e[\32m"
-N="\e[\0m"
-Y="\e[\33m"
+R="\e[32m"
+N="\e[0m"
+Y="\e[33m"
 
 echo " enter string name is : $STRINGNAME"
 
