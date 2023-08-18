@@ -4,7 +4,7 @@ echo "please enter sting name"
 
 STRINGNAME=$()
 
-read -s $STRINGNAME
+read -s STRINGNAME
 
 echo " enter string name is : $STRINGNAME"
 
