@@ -14,7 +14,7 @@ echo " enter string name is : $STRINGNAME"
 
 if [ $INPUT == $reverse ]
 
-then
+ then
     echo " enter string is a palindrom"
     
 else
