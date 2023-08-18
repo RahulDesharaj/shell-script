@@ -6,4 +6,5 @@ STRINGNAME=$()
 
 read -s $STRINGNAME
 
-reverse " "
+echo " enter string name is : $STRINGNAME"
+
