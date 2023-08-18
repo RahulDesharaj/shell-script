@@ -6,7 +6,7 @@ STRINGNAME=$()
 
 read  STRINGNAME
 
-INPUT=${input}
+INPUT=${#input}
 
 reverse=""
 
@@ -15,9 +15,9 @@ echo " enter string name is : $STRINGNAME"
 if [ $INPUT == $reverse]
 
 then
-    echo " enter string is palindrom"
+    echo " enter $input is palindrom"
     
 else
-    echo "enter string is not an panlindrom"
+    echo "enter $input is not an panlindrom"
 fi
 
