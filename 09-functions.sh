@@ -40,12 +40,22 @@ else
 fi
 
 
-yum install nginx -y
+yum install nginx -y &>>$LOGFILE
 
-VALIDATE=$? "installing nginx"
+VALIDATE $? "installing nginx"
 
 
-yum install mysql -y
+yum install mysql -y &>>$LOGFILE
 
-VALIDATE=$? "insalling mysql"
+VALIDATE $? "insalling mysql"
+
+yum install posddtfix -y &>>$LOGFILE
+
+VALIDATE $? "Installing postfix"
+
+
+
+
+
+
 
