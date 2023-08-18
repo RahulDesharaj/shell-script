@@ -17,7 +17,8 @@ if [ $INPUT == $reverse ]
  then
     echo " enter string is a palindrom"
     
-else
+ else
     echo "enter string is not an panlindrom"
 fi
+
 
