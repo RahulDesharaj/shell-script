@@ -12,6 +12,11 @@ reverse=""
 
 echo " enter string name is : $STRINGNAME"
 
+for (( i=$INPUT-1; i>=0; i-- ))
+do 
+	reverse="$reverse${input:$i:1}"
+done
+
 if [ $INPUT == $reverse ]
 
  then
