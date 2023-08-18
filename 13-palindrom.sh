@@ -6,7 +6,7 @@ STRINGNAME=$()
 
 read  STRINGNAME
 
-INPUT=$(input)
+INPUT=${input}
 
 reverse=""
 
