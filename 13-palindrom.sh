@@ -4,7 +4,7 @@ echo "please enter sting name"
 
 STRINGNAME=$()
 
-read -s STRINGNAME
+read  STRINGNAME
 
 INPUT=$(input)
 
@@ -16,7 +16,7 @@ if [ $INPUT == $reverse]
 
 then
     echo " enter string is palindrom"
-    exit 1
+    
 else
     echo "enter string is not an panlindrom"
 fi
