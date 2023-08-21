@@ -12,29 +12,14 @@ G="\e[32m"
 N="\e[0m"
 Y="\e[33m"
 
-RAM_USAGE=$(free)
+RAM_USAGE=$(free -m |grep mem | awk '/Mem/{print $3})
 
 RAM_USAGE_THRESHOLD=1
 
 message=""
 
-while IFS= read line
 
-do
-    
 
- usage=$(echo $line | $RAM_USAGE | awk '/Mem/{print $11}')
 
-    if [ $usage > $RAM_USAGE_THRESHOLD | bc -l ];then
-
-  
-     message+="HIGH RAM USAGE on $usage\n"
-   fi
-
-done <<<$RAM_USAGE
-
-    
-
-echo -e "message: $message"
 
 
