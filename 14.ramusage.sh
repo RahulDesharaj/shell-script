@@ -12,7 +12,7 @@ G="\e[32m"
 N="\e[0m"
 Y="\e[33m"
 
-RAM_USAGE=$(free -m)
+RAM_USAGE=$(top)
 
 RAM_USAGE_THRESHOLD=1
 
@@ -23,7 +23,7 @@ while IFS= read line
 do
     
 
- usage=$(echo $line | awk '/Mem/{print $3}')
+ usage=$(echo $line | awk '/Mem/{print $11}')
 
     if [ $usage -gt $RAM_USAGE_THRESHOLD ];then
 
