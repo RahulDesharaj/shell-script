@@ -14,7 +14,7 @@ Y="\e[33m"
 
 RAM_USAGE=$(free -m)
 
-RAM_USAGE_THRESHOLD=0.01
+RAM_USAGE_THRESHOLD=0.1
 
 message=""
 
@@ -25,7 +25,8 @@ do
 
  usage=$(echo $line | awk '/Mem/{print $3}')
 
- if [ $usage -gt $RAM_USAGE_THRESHOLD ];
+ if [ $usage == $RAM_USAGE_THRESHOLD ];
+ 
   then
      message+="HIGH RAM USAGE on $usage\n"
    fi
