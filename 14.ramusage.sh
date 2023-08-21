@@ -23,9 +23,9 @@ while IFS= read line
 do
     
 
- usage=$(echo $line | awk '/Mem/{print $11}')
+ usage=$(echo $line | $RAM_USAGE | awk '/Mem/{print $11}')
 
-    if [ $usage -gt $RAM_USAGE_THRESHOLD ];then
+    if [ $usage > $RAM_USAGE_THRESHOLD | bc -l ];then
 
   
      message+="HIGH RAM USAGE on $usage\n"
