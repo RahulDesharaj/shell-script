@@ -21,7 +21,7 @@ while IFS= read line
 do
     
 
- usage=$(echo $line | awk '{print $1}')
+ usage=$("echo $line | awk '{print $1}' ")
 
 done <<<$RAM_USAGE
 
