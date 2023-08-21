@@ -16,12 +16,24 @@ RAM_USAGE=$(top)
 
 RAM_USAGE_THRESHOLD=0.01
 
+message=""
+
 while IFS= read line
 
 do
     
 
- usage=$("echo $line | awk '{print$11}'")
+ usage=$(echo $line | awk '{print$11}')
+
+ if [ $usage -gt $RAM_USAGE_THRESHOLD ];
+  then
+     message+="HIGH RAM USAGE on $usage\n"
+   fi
 
 done <<<$RAM_USAGE
+
+    
+
+echo -e "message: $message"
+
 
