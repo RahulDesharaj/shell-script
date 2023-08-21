@@ -14,11 +14,11 @@ Y="\e[33m"
 
 RAM_USAGE=$(free -m | grep mem | awk '{print $3}')
 
-RAM_USAGE_THRESHOLD=1
+RAM_USAGE_THRESHOLD=100
 
 
 message="system is runnig out of RAM $RAM_USAGE"
 
 if [ "$RAM_USAGE" -gt "$RAM_USAGE_THRESHOLD" ];then
-    echo -e "$Y $message: $RAM_USAGE"
+    echo -e "$Y $message: $RAM_USAGE $N MB"
 fi    
