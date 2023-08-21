@@ -19,7 +19,7 @@ RAM_USAGE_THRESHOLD=100
 
 message="system is runnig out of RAM $RAM_USAGE"
 
-if [ "$RAM_USAGE" == "$RAM_USAGE_THRESHOLD" ]; then
-    echo -e "$Y $message: $RAM_USAGE $N MB"
+if [ "$RAM_USAGE" -gt "$RAM_USAGE_THRESHOLD" ]; then
+    echo -e "$R $message: $RAM_USAGE $N MB"
 fi    
 
