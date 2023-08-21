@@ -19,7 +19,7 @@ RAM_USAGE_THRESHOLD=0.01
 while IFS= read line
 
 do
-    USAGE=$(echo $line | awk '{print$11}')
+    USAGE=$(echo $line |awk '{print$3}')
 
 done <<<$RAM_USAGE
 
