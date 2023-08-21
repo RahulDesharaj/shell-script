@@ -14,7 +14,7 @@ Y="\e[33m"
 
 RAM_USAGE=$(free -m)
 
-RAM_USAGE_THRESHOLD=0.1
+RAM_USAGE_THRESHOLD=0
 
 message=""
 
