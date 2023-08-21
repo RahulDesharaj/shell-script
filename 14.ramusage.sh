@@ -23,3 +23,9 @@ if [ "$RAM_USAGE" -gt "$RAM_USAGE_THRESHOLD" ]; then
     echo -e "$R $message: $RAM_USAGE $N MB"
 fi    
 
+echo -e "message: $message"
+
+#echo "$message" | mail -s "High Disk usage" info@joindevops.com
+
+#how to call other shell script from your current script
+sh mail.sh rahuldesharaj92@gmail.com "High RAM_USAGE" "$message" "DEVOPS TEAM" "High RAM usage"
