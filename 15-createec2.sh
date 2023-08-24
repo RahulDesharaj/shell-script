@@ -5,7 +5,7 @@ NAMES=("mongodb" "web" "catalouge" "mysql" "redis" "rabbitmq" "shipping" "paymen
 INSTANCETYPE=""
 
 
-for i in ${NAMES}
+for i in "${NAMES[@]}"
 
 do
 
