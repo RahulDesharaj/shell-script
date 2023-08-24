@@ -8,6 +8,7 @@ SECURITY_GROUP_ID=sg-04c41dde9b1452d4c
 DOMAIN_NAME=rahuldesharaju.online
 
 
+
 for i in "${NAMES[@]}"
 
 do
