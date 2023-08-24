@@ -15,7 +15,9 @@ do
 
     echo "NAMES : $i"
 
-    if [[$i == "mongodb" || $i == "mysql" ]]
+    
+
+    if [[ $i == "mongodb" || $i == "mysql" ]]
     then
 
         INSTANCETYPE="t3.medium"
