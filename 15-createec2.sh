@@ -2,7 +2,7 @@
 
 NAMES=("mongodb" "web" "catalouge" "mysql" "redis" "rabbitmq" "shipping" "payment" "dispatch" "user" "cart")
 
-INSTANCETYPE=""
+INSTANCE_TYPE=""
 IMAGE_ID=ami-03265a0778a880afb
 SECURITY_GROUP_ID=sg-04c41dde9b1452d4c
 DOMAIN_NAME=rahuldesharaju.online
