@@ -26,10 +26,9 @@ dnf list installed git
 
 if [ $? -ne 0 ]
 then
-    echo "git is not installed"
+    echo "git is not installed ... going to install the git"
     dnf install git -y
     VALIDATE $? "installing git"
 else
    echo "git is inatlled"  
 fi
-     
